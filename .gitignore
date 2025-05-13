@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Results
+results/metrics/*
+results/figures/*
+results/logs/*
+!results/metrics/.gitkeep
+!results/figures/.gitkeep
+!results/logs/.gitkeep
+
+# Documentation
+docs/_build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
