@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Literal
+from typing import Literal, Optional
 
 EPS_DIST = Literal["gaussian", "student_t"]
 ETA_DIST = Literal["uniform", "beta_sym"]
@@ -12,8 +12,8 @@ class ModelParams:
     sigma_eta: float
     eps_dist: EPS_DIST = "gaussian"
     eta_dist: ETA_DIST = "uniform"
-    nu: int | None = None       # Student-t degrees of freedom
-    alpha: float | None = None  # symmetric-Beta shape
+    nu: Optional[int] = None       # Student-t degrees of freedom
+    alpha: Optional[float] = None  # symmetric-Beta shape
 
 @dataclass(frozen=True)
 class ExperimentSpec:
